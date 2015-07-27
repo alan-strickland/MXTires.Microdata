@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+
 using MXTires.Microdata.Validators;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
@@ -71,18 +71,7 @@ namespace MXTires.Microdata.Attributes
             var validator = new TypeValidator(AcceptedTypes);
             return validator.IsValid(value.GetType());
         }
-        /// <summary>
-        /// Determines whether the specified value is valid.
-        /// </summary>
-        /// <param name="value">The value.</param>
-        /// <param name="validationContext">The validation context.</param>
-        /// <returns>ValidationResult.</returns>
-        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
-        {
-             return new ValidationResult(
-          FormatErrorMessage(validationContext.DisplayName));
-            //return ValidationResult.;
-        }
+
         //public virtual Validator ValidatorInstance
         //{
         //    get
