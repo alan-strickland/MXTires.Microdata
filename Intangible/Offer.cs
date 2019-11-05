@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using MXTires.Microdata.Intangible.Enumeration;
 using MXTires.Microdata.Intangible.StructuredValues;
 using Newtonsoft.Json;
@@ -117,15 +118,33 @@ namespace MXTires.Microdata.Intangible
         /// <summary>
         /// <see cref="Review" /> - A review of the item. Supersedes reviews.
         /// </summary>
-        /// <value>The review.</value>
-        [JsonProperty("review")]
-        public Review Review { get; set; }
+        [JsonIgnore]
+        public Review Review
+        {
+            get
+            {
+                return Reviews?.FirstOrDefault();
+            }
+            set
+            {
+                if (Reviews == null)
+                {
+                    Reviews = new List<Review>();
+                }
+                else
+                {
+                    Reviews.Clear();
+                }
+
+                Reviews.Add(value);
+            }
+        }
 
         /// <summary>
         /// Collection of <see cref="Review" />
         /// </summary>
-        /// <value>The reviews.</value>
-        [JsonProperty("reviews")]
+		/// <value>The reviews.</value>
+        [JsonProperty("review")]
         public IList<Review> Reviews { get; set; }
 
         /// <summary>

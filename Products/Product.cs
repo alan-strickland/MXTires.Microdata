@@ -289,18 +289,37 @@ namespace MXTires.Microdata
             }
         }
         /// <summary>
-        /// Review 	A review of the item. Supersedes reviews.
+        /// <see cref="Review"/> - A review of the item. Supersedes reviews.
         /// </summary>
         /// <value>The review.</value>
-        [JsonProperty("review")]
-        public Review Review { get; set; }
+        [JsonIgnore]
+        public Review Review
+        {
+            get
+            {
+                return Reviews?.FirstOrDefault();
+            }
+            set
+            {
+                if (Reviews == null)
+                {
+                    Reviews = new List<Review>();
+                }
+                else
+                {
+                    Reviews.Clear();
+                }
+
+                Reviews.Add(value);
+            }
+        }
 
         /// <summary>
-        /// Collection of reviews.
+        /// Collection of <see cref="Review"/> 
         /// </summary>
         /// <value>The reviews.</value>
-        [JsonProperty("reviews")]
-        public List<Review> Reviews { get; set; }
+        [JsonProperty("review")]
+        public IList<Review> Reviews { get; set; }
 
         /// <summary>
         /// The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.

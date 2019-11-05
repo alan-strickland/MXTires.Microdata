@@ -25,6 +25,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using MXTires.Microdata.CreativeWorks;
 using MXTires.Microdata.Intangible;
 using MXTires.Microdata.Intangible.StructuredValues;
@@ -68,16 +69,35 @@ namespace MXTires.Microdata
         public string Telephone { get; set; }
 
         /// <summary>
-        /// A review of the item. Supersedes reviews.
+        /// <see cref="Review"/> - A review of the item. Supersedes reviews.
         /// </summary>
-        [JsonProperty("review")]
-        public Review Review { get; set; }
+        [JsonIgnore]
+        public Review Review
+        {
+            get
+            {
+                return Reviews?.FirstOrDefault();
+            }
+            set
+            {
+                if (Reviews == null)
+                {
+                    Reviews = new List<Review>();
+                }
+                else
+                {
+                    Reviews.Clear();
+                }
+
+                Reviews.Add(value);
+            }
+        }
 
         /// <summary>
-        /// Review collection
+        /// Collection of <see cref="Review"/> 
         /// </summary>
-        [JsonProperty("reviews")]
-        public List<Review> Reviews { get; set; }
+        [JsonProperty("review")]
+        public IList<Review> Reviews { get; set; }
 
         /// <summary>
         /// Offer - A pointer to products or services offered by the organization or person.
