@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-#region License
+﻿#region License
 // Copyright (c) 2015 1010Tires.com
 //
 // Permission is hereby granted, free of charge, to any person
@@ -26,10 +23,6 @@ using System.Linq;
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System.Text;
-using System.Threading.Tasks;
-using MXTires.Microdata.Validators;
-using Newtonsoft.Json;
 
 namespace MXTires.Microdata.LocalBusinesses
 {

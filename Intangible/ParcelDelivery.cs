@@ -24,7 +24,6 @@
 #endregion
 
 using System;
-using System.Collections.Generic;
 using MXTires.Microdata.Events;
 using MXTires.Microdata.Intangible.Enumeration;
 using MXTires.Microdata.Validators;

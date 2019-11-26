@@ -22,17 +22,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
-using System.Collections.Specialized;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Reflection;
-using System.Security.Permissions;
-using System.Xml;
-using System.Globalization;
-using System.ComponentModel;
-using System.Security;
-using System.Text;
 using System;
 using MXTires.Microdata.Validators;
 namespace MXTires.Microdata.Attributes

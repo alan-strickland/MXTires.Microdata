@@ -27,7 +27,6 @@ using System;
 using System.Collections.Generic;
 using MXTires.Microdata.Validators;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 using MXTires.Microdata.Intangible;
 using MXTires.Microdata.CreativeWorks;
 

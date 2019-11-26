@@ -23,7 +23,6 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
 using System.Collections.Generic;
 using MXTires.Microdata.Validators;
 using Newtonsoft.Json;
@@ -31,11 +30,11 @@ using MXTires.Microdata.Organizations.PerformingGroups;
 
 namespace MXTires.Microdata.CreativeWorks
 {
-	/// <summary>
-	/// A series of movies. Included movies can be indicated with the hasPart property.
-	/// </summary>
-	/// <seealso cref="MXTires.Microdata.CreativeWorks.CreativeWorkSeries" />
-	public class MovieSeries : CreativeWorkSeries
+    /// <summary>
+    /// A series of movies. Included movies can be indicated with the hasPart property.
+    /// </summary>
+    /// <seealso cref="MXTires.Microdata.CreativeWorks.CreativeWorkSeries" />
+    public class MovieSeries : CreativeWorkSeries
 	{
 		/// <summary>
 		/// Person - An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip. Supersedes <see cref="Actors"/>.

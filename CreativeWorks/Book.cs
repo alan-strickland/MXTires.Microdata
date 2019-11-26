@@ -25,7 +25,6 @@
 
 using System;
 using MXTires.Microdata.Intangible.Enumeration;
-using MXTires.Microdata.Validators;
 using Newtonsoft.Json;
 
 namespace MXTires.Microdata.CreativeWorks

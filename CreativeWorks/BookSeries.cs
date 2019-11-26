@@ -23,18 +23,14 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Collections.Generic;
-using MXTires.Microdata.Validators;
-using Newtonsoft.Json;
 
 namespace MXTires.Microdata.CreativeWorks
 {
-	/// <summary>
-	/// A series of books. Included books can be indicated with the hasPart property.
-	/// </summary>
-	/// <seealso cref="MXTires.Microdata.CreativeWorks.CreativeWorkSeries" />
-	public class BookSeries : CreativeWorkSeries
+    /// <summary>
+    /// A series of books. Included books can be indicated with the hasPart property.
+    /// </summary>
+    /// <seealso cref="MXTires.Microdata.CreativeWorks.CreativeWorkSeries" />
+    public class BookSeries : CreativeWorkSeries
 	{
 	}
 }

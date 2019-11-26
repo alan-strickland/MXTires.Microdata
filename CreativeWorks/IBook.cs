@@ -1,5 +1,4 @@
-﻿using System;
-namespace MXTires.Microdata.CreativeWorks
+﻿namespace MXTires.Microdata.CreativeWorks
 {
     interface IBook
     {

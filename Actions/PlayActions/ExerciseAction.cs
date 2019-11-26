@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MXTires.Microdata.CreativeWorks;
+﻿using MXTires.Microdata.CreativeWorks;
 using MXTires.Microdata.Events;
 using MXTires.Microdata.Intangible.Quantities;
 using MXTires.Microdata.LocalBusinesses;

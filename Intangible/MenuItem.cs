@@ -23,7 +23,6 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
 using MXTires.Microdata.Intangible.Enumeration;
 using MXTires.Microdata.Intangible.StructuredValues;
 using Newtonsoft.Json;

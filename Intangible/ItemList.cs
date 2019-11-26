@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using MXTires.Microdata.Intangible.Enumeration;
-using System.ComponentModel;
 using Newtonsoft.Json.Converters;
 
 namespace MXTires.Microdata.Intangible

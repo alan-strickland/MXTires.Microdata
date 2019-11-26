@@ -23,17 +23,16 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using MXTires.Microdata.Validators;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 
 namespace MXTires.Microdata.CreativeWorks
 {
-	/// <summary>
-	/// A media season e.g. tv, radio, video game etc.
-	/// </summary>
-	public class CreativeWorkSeason : CreativeWork
+    /// <summary>
+    /// A media season e.g. tv, radio, video game etc.
+    /// </summary>
+    public class CreativeWorkSeason : CreativeWork
 	{
 		/// <summary>
 		/// Person - An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip. Supersedes <see cref="Actors"/>.

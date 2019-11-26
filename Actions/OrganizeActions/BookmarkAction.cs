@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MXTires.Microdata.Validators;
-using Newtonsoft.Json;
-
-namespace MXTires.Microdata.Actions.OrganizeActions
+﻿namespace MXTires.Microdata.Actions.OrganizeActions
 {
     /// <summary>
     /// An agent bookmarks/flags/labels/tags/marks an object.
     /// <example><code> <script type="application/ld+json">
     /// // John bookmarked a photo using instagram.
     /// {
-      /// "@context": "http://schema.org",
+    /// "@context": "http://schema.org",
     /// "@type": "BookmarkAction",
     /// "agent": {
     /// "@type": "Person",

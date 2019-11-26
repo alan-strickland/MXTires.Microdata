@@ -1,6 +1,4 @@
-﻿
-using System;
-namespace MXTires.Microdata.Intangible.Enumeration
+﻿namespace MXTires.Microdata.Intangible.Enumeration
 {
 
     /// <summary>

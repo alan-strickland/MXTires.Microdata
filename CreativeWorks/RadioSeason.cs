@@ -22,14 +22,13 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
-using Newtonsoft.Json;
 
 namespace MXTires.Microdata.CreativeWorks
 {
-	/// <summary>
-	/// Season dedicated to radio broadcast and associated online delivery.
-	/// </summary>
-	public class RadioSeason : CreativeWorkSeason
+    /// <summary>
+    /// Season dedicated to radio broadcast and associated online delivery.
+    /// </summary>
+    public class RadioSeason : CreativeWorkSeason
 	{
 	}
 }

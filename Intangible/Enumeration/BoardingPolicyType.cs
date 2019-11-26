@@ -23,8 +23,6 @@
 // OTHER DEALINGS IN THE SOFTWARE.
 #endregion
 
-using System;
-using System.Threading.Tasks;
 
 namespace MXTires.Microdata.Intangible.Enumeration
 {

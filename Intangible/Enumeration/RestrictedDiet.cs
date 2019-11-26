@@ -49,7 +49,6 @@
 #endregion
 
 using System;
-using Newtonsoft.Json;
 
 namespace MXTires.Microdata.Intangible.Enumeration
 {

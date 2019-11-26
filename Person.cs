@@ -25,8 +25,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using MXTires.Microdata.Intangible;
 using MXTires.Microdata.Intangible.Quantities;
 using MXTires.Microdata.Intangible.StructuredValues;

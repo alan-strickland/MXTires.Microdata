@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MXTires.Microdata.Intangible.Enumeration
+﻿namespace MXTires.Microdata.Intangible.Enumeration
 {
     /// <summary>
     /// A specific payment status. For example, PaymentDue, PaymentComplete, etc.
